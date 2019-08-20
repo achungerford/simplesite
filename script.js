@@ -8,9 +8,3 @@
   Varialbes & Data Types
  */
 
-var firstName = 'Michael';
-console.log(firstName);
-
-var lastName = 'Jordan';
-console.log(lastName);
- 
