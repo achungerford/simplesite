@@ -13,4 +13,4 @@ window.alert("Here is my message.");
 alert("My second message with more words to make it obvious they're different.");
 
 // the write method: writes directly into the DOM
-document.write("Here is another message.");
+document.write("Here we are writing directly to the 'document' object.");
