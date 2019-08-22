@@ -25,3 +25,13 @@ productCount--;
 // rewrite productCount = producCount +/- 5
 productCount += 5;
 productCount -= 5;
+
+// Concatenate: using the + operator with strings
+var firstName = "Barack";
+var lastName = "Obama";
+
+var fullName = firstName + " " + lastName;
+
+// numbers get converted to strings if you concatenate them
+var age = 58;
+alert(firstName + age);
