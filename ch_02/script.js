@@ -11,3 +11,12 @@ document.write("The quick brown fox jumps over the lazy dog.");
 var productName = "Leather wallet";
 
 alert(productName);
+
+// incrementing and decrementing variables
+var productCount = 10;
+
+// rewrite productCount = productCount + 1
+productCount++;
+
+// rewrite producCount = producCount - 1
+productCount--;
