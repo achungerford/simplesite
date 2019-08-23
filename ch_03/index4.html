@@ -1,0 +1,35 @@
+<!--return values from functions-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Return Values</title>
+
+    <!--scripts-->
+    <script>
+        function cube(x) {
+            return x * x * x;
+        }
+        
+        // use the function
+        alert(cube(2));
+
+        // another way
+        var answer = cube(3);
+        alert(answer)
+
+        // if you vail to use parentheses JS assumes you're referring to the def of the function
+        // rather than the value it returns
+        var answer = cube;
+        // instead of 27, the variable answer just contains an identical function def to that of cube()
+        alert(answer(2));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
