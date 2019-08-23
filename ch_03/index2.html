@@ -1,0 +1,25 @@
+<!--put script files in the head, not the body-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS in Head</title>
+
+    <!--script files-->
+    <script src="script.js" type="text/javascript"></script>
+
+    <!--bc this function is defined in the Head section it can be called anywhere in the document-->
+    <script>
+        function sayHello() {
+            alert("Hello");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Say Hello" onclick="sayHello()" />
+</body>
+</html>
