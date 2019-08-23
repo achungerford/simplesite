@@ -1,0 +1,34 @@
+<!--Anonymous Functions-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anonymous Functions</title>
+
+    <!--scripts-->
+    
+    <!--before-->
+    <script>
+        function sayHello() {
+            alert("Hello");
+        }
+    </script>
+
+    <!--now: using anonymous functions-->
+    <script>
+        var sayHello = function() { alert("Hello"); };  // this is like a lamda function in Python
+        // because we didn't give a name to the function prior to assigning it, its called an anonymous function
+    </script>
+
+</head>
+
+<body>
+    <!--before-->
+    <input type="button" value="Say Hello" onclick="sayHello()">
+
+
+</body>
+</html>
