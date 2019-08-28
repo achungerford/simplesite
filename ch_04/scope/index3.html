@@ -1,8 +1,9 @@
-<!--Using 'this' the keyword. Two ways it is used.
-in first example, 'this' refers to the html element <img>
+<!--Keywords: 'this' and 'let' and how they relate to variable scope.
 
+In first example, 'this' refers to the html element <img>
 When used inside a function, 'this' refers to whatever "owns" the function,
-something I'll refer to as the "parent scope" of the function.-->
+something referred to as the "parent scope" of the function.
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,9 +43,20 @@ something I'll refer to as the "parent scope" of the function.-->
     </script>
 
 
-    <!--demonstrating the keyword 'let' to allow variables to have block scope-->
+    <!--demonstrating the keyword 'let' to allow variables to have block scope.
+    Instead of just local and global scope, 'let' allows a variable to have a block scope.-->
     <script>
-    
+        // if x is >
+        function myFunction(x) {
+            var y = x;
+            if(x > 50) {
+                let y = 10;
+                alert("inner y = " + y);    // alerts 10
+            }
+        alert("outer y = " + y);
+        }
+
+        myFunction(51);
     </script>
 </body>
 </html>

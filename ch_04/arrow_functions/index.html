@@ -1,0 +1,43 @@
+<!--Arrow functions are like lamda functions in Python-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--anonymous functions-->
+    <script>
+        x = 10; y = 2;
+        var sayHello = function() { alert("Hello"); };
+    </script>
+
+    <!--arrow functions: this is the same as above.
+    Does not requrie the keyword 'function'.-->
+    <script>
+        // parameter => statements
+        var sayHello = () => alert('Hello');
+    </script>
+
+
+    <!--example with parameters-->
+    <script>
+        // if only one parameter, parentheses not required
+        myFunc = x => alert(x);
+        
+        // on the right side you only need curly braces when more than one expression is included.
+        newFunc = (x, y) => alert(x + y);
+
+        // complex functions
+        lastFunc = (x, y, z) => {
+            let area = x*y + 5;
+            let boxes = area / z;
+            return boxes;
+        }
+    </script>
+
+</body>
+</html>
