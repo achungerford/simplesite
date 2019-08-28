@@ -1,0 +1,50 @@
+<!--Using 'this' the keyword. Two ways it is used.
+in first example, 'this' refers to the html element <img>
+
+When used inside a function, 'this' refers to whatever "owns" the function,
+something I'll refer to as the "parent scope" of the function.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--'this' from before
+    Demo a mouse rollover. Chaning events on mouse movement-->
+    <!--<img src="CA.png" alt="CA flag" onmouseover="this.src='github-clone.gif';" onmouseout="this.src='CA.png';" />-->
+
+    <!--'this' inside a function-->
+    <script>
+        // declare global variables
+        var a = 10;
+        var b = 10;
+        
+        // show global variables
+        alert("Global a = " + a + "\nGlobal b = " + b);
+
+        // demonstrate 'this' keywrod in function
+        function showVars() {
+            var a = 20;     // declare new local variable, a
+            b = 20;         // change the value of global variable, b
+            
+            // 'this' refers to the parent scope
+            // since showVars() was created at the top-level, 'this' refers to the window object
+            return "this.a = " + this.a + "\nNew local 'a' = " + a + "\nGlobal 'b' changed locally = " + b;
+        }
+        
+
+        var message = showVars();
+        alert(message + "\nGlobal variable 'a' = " + a);
+    </script>
+
+
+    <!--demonstrating the keyword 'let' to allow variables to have block scope-->
+    <script>
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--Variable Scope-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variable Scope</title>
+</head>
+<body>
+    <script>
+
+        // define addTax()
+        function addTax(subtotal, taxRate) {
+            var total = subtotal * (1 + (taxRate/100));
+            return total;
+        }
+        
+        // call addTax()
+        var invoiceValue = addTax(50, 10);
+        alert(invoiceValue);    // works OK
+
+        // wheter or not you see the error below depends on your browser's settings
+        alert(total);   // fails, never appears
+    </script>
+
+</body>
+</html>
